@@ -21,3 +21,18 @@ function mostrarSenha(idInput, icone) {
         icone.classList.add("fa-eye");
     }
 }
+
+// NOVO: Lógica de Finalização
+function entrar() {
+    const usuario = document.getElementById("usuario-login").value;
+    if (usuario) {
+        alert("Bem-vindo, " + usuario + "! Login realizado com sucesso. 🚀");
+    } else {
+        alert("Por favor, preencha os campos corretamente. ⚠️");
+    }
+}
+
+function criarConta() {
+    alert("Conta criada com sucesso! Agora você pode fazer login. ✅");
+    abrirLogin();
+}
