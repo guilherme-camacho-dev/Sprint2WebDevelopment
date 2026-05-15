@@ -68,7 +68,6 @@ body{
     opacity: 0.9;
 }
 
-/* NOVO: Estilização dos Blocos de Conteúdo e Animações */
 .bloco{
     max-width: 900px;
     margin: 80px auto;
@@ -96,4 +95,63 @@ body{
 .fade.show{
     opacity: 1;
     transform: translateY(0);
+}
+
+/* NOVO: Estilização da Galeria e Botão Topo */
+.carrossel{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    margin-top: 25px;
+}
+
+.img-box{
+    width: 900px;
+    height: 480px;
+    overflow: hidden;
+    border-radius: 14px;
+    border: 1px solid rgba(255, 255, 255, 0.116);
+    background: #141414;
+}
+
+.img-box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    transition: 0.4s ease;
+}
+
+.seta{
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    border: none;
+    background: #fd1b94;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.seta:hover{
+    transform: scale(1.05);
+}
+
+#topoBtn{
+    position: fixed;
+    bottom: 22px;
+    right: 22px;
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    border: none;
+    background: #ff108f;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+    box-shadow: 0 4px 20px rgba(250, 19, 142, 0.171);
 }
