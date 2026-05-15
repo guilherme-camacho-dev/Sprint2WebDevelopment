@@ -52,7 +52,6 @@ body{
     color: #f11389;
 }
 
-/* NOVO: Estilização da Seção Hero */
 .hero{
     padding: 140px 20px 90px;
     text-align: center;
@@ -67,4 +66,34 @@ body{
 .hero p{
     font-size: 16px;
     opacity: 0.9;
+}
+
+/* NOVO: Estilização dos Blocos de Conteúdo e Animações */
+.bloco{
+    max-width: 900px;
+    margin: 80px auto;
+    padding: 0 20px;
+    scroll-margin-top: 100px;
+}
+
+.bloco h2{
+    color: #fc138f;
+    margin-bottom: 10px;
+    font-size: 22px;
+}
+
+.bloco p{
+    color: #cfcfcf;
+    line-height: 1.6;
+}
+
+.fade{
+    opacity: 0;
+    transform: translateY(18px);
+    transition: 0.7s ease;
+}
+
+.fade.show{
+    opacity: 1;
+    transform: translateY(0);
 }
