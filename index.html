@@ -30,6 +30,37 @@
                 </div>
             </div>
 
+            <div class="grupo-input">
+                <label>Senha</label>
+
+                <div class="caixa-input">
+                    <i class="fa-solid fa-lock"></i>
+
+                    <input type="password" id="senha-login" placeholder="Digite sua senha">
+
+                    <i class="fa-regular fa-eye olho"
+                    onclick="mostrarSenha('senha-login', this)"></i>
+                </div>
+            </div>
+
+            <div class="opcoes">
+
+                <label class="lembrar-login">
+                    <input type="checkbox">
+                    <span>Lembrar login</span>
+                </label>
+
+                <a href="#" class="esqueci">Esqueci minha senha</a>
+
+            </div>
+
+            <button onclick="entrar()">Entrar</button>
+
+            <div class="cadastro">
+                Não tem uma conta?
+                <a href="#" onclick="abrirCadastro()">Criar conta</a>
+            </div>
+
         </div>
 
     </div>
