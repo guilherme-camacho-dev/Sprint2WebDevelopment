@@ -1,6 +1,5 @@
 const elementos = document.querySelectorAll(".fade");
 
-// Função para animar elementos ao scroll
 function animar(){
     const altura = window.innerHeight;
 
@@ -16,7 +15,11 @@ function animar(){
 window.addEventListener("scroll", animar);
 window.addEventListener("load", animar);
 
-// Lógica do Botão de Voltar ao Topo
+
+
+
+
+
 const btn = document.getElementById("topoBtn");
 
 window.addEventListener("scroll", () => {
@@ -34,24 +37,45 @@ function voltarTopo(){
     });
 }
 
-// NOVO: Lógica do Carrossel de Imagens
-const imagens = ["ia.jpg", "foto_rg.jpg", "ia2.jpg"];
-let index = 0;
-const imgElemento = document.getElementById("imgCarrossel");
 
-function atualizarCarrossel() {
-    imgElemento.src = imagens[index];
+
+
+
+
+const imagens = [
+    "imagens/tucunare.jpg",
+    "imagens/estudo-2.jpg",
+    "imagens/foto_rg.jpg",
+    "imagens/jovi_brasil.jpg",
+    "imagens/IAfacial.jpg"
+];
+
+
+
+
+
+
+
+
+
+let i = 0;
+
+const img = document.getElementById("imgCarrossel");
+
+function atualizar(){
+    img.src = imagens[i];
 }
 
-function proximaImagem() {
-    index = (index + 1) % imagens.length;
-    atualizarCarrossel();
+function proximaImagem(){
+    i = (i + 1) % imagens.length;
+    atualizar();
 }
 
-function voltarImagem() {
-    index = (index - 1 + imagens.length) % imagens.length;
-    atualizarCarrossel();
+function voltarImagem(){
+    i = (i - 1 + imagens.length) % imagens.length;
+    atualizar();
 }
 
-// Inicia a primeira imagem
-atualizarCarrossel();
+setInterval(proximaImagem, 3000);
+
+window.addEventListener("load", atualizar);

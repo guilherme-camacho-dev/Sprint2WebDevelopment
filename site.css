@@ -1,34 +1,44 @@
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, sans-serif;
 }
-
 html{
     scroll-behavior: smooth;
 }
-
 body{
     background: #0b0b0f;
     color: #ffffff;
 }
+
+
+
+
+
+
 
 .navbar{
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
+
     padding: 16px 32px;
+
     background: rgba(0,0,0,0.85);
     backdrop-filter: blur(10px);
+
     z-index: 1000;
     border-bottom: 1px solid rgba(255,255,255,0.05);
 }
 
+                                         
 .logo{
     color: #f8178f;
     font-size: 20px;
@@ -52,9 +62,16 @@ body{
     color: #f11389;
 }
 
+    
+
+         
+
+           
+
 .hero{
     padding: 140px 20px 90px;
     text-align: center;
+
     background: linear-gradient(135deg, #ff1493, #6a00ff);
 }
 
@@ -67,11 +84,14 @@ body{
     font-size: 16px;
     opacity: 0.9;
 }
+  
 
+  
 .bloco{
     max-width: 900px;
     margin: 80px auto;
     padding: 0 20px;
+
     scroll-margin-top: 100px;
 }
 
@@ -86,6 +106,106 @@ body{
     line-height: 1.6;
 }
 
+
+ 
+
+
+
+
+
+.carrossel{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+
+    margin-top: 25px;
+}
+
+.img-box{
+    width: 900px;
+    height: 480px;
+
+    overflow: hidden;
+
+    border-radius: 14px;
+    border: 1px solid rgba(255, 255, 255, 0.116);
+
+    background: #141414;
+}
+
+.img-box img{
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    object-position: center;
+
+    display: block;
+    transition: 0.4s ease;
+}
+
+
+
+
+
+
+.seta{
+    width: 52px;
+    height: 52px;
+
+    border-radius: 50%;
+    border: none;
+
+    background: #fd1b94;
+    color: white;
+
+    font-size: 20px;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.seta:hover{
+    transform: scale(1.05);
+}
+
+
+
+ 
+
+
+#topoBtn{
+    position: fixed;
+    bottom: 22px;
+    right: 22px;
+
+    width: 54px;
+    height: 54px;
+
+    border-radius: 50%;
+    border: none;
+
+    background: #ff108f;
+    color: white;
+
+    font-size: 20px;
+
+    cursor: pointer;
+
+    display: none;
+
+    box-shadow: 0 4px 20px rgba(250, 19, 142, 0.171);
+}
+
+ 
+  
+   
+
+
+
+
 .fade{
     opacity: 0;
     transform: translateY(18px);
@@ -95,63 +215,5 @@ body{
 .fade.show{
     opacity: 1;
     transform: translateY(0);
-}
-
-/* NOVO: Estilização da Galeria e Botão Topo */
-.carrossel{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 14px;
-    margin-top: 25px;
-}
-
-.img-box{
-    width: 900px;
-    height: 480px;
-    overflow: hidden;
-    border-radius: 14px;
-    border: 1px solid rgba(255, 255, 255, 0.116);
-    background: #141414;
-}
-
-.img-box img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-    display: block;
-    transition: 0.4s ease;
-}
-
-.seta{
-    width: 52px;
-    height: 52px;
-    border-radius: 50%;
-    border: none;
-    background: #fd1b94;
-    color: white;
-    font-size: 20px;
-    cursor: pointer;
-    transition: 0.2s;
-}
-
-.seta:hover{
-    transform: scale(1.05);
-}
-
-#topoBtn{
-    position: fixed;
-    bottom: 22px;
-    right: 22px;
-    width: 54px;
-    height: 54px;
-    border-radius: 50%;
-    border: none;
-    background: #ff108f;
-    color: white;
-    font-size: 20px;
-    cursor: pointer;
-    display: none;
-    box-shadow: 0 4px 20px rgba(250, 19, 142, 0.171);
-}
+}  
+    
