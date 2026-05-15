@@ -14,22 +14,17 @@ body{
     color: #ffffff;
 }
 
-/* Estilização da Navbar */
 .navbar{
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-
     display: flex;
     justify-content: space-between;
     align-items: center;
-
     padding: 16px 32px;
-
     background: rgba(0,0,0,0.85);
     backdrop-filter: blur(10px);
-
     z-index: 1000;
     border-bottom: 1px solid rgba(255,255,255,0.05);
 }
@@ -55,4 +50,21 @@ body{
 
 .navbar a:hover{
     color: #f11389;
+}
+
+/* NOVO: Estilização da Seção Hero */
+.hero{
+    padding: 140px 20px 90px;
+    text-align: center;
+    background: linear-gradient(135deg, #ff1493, #6a00ff);
+}
+
+.hero h1{
+    font-size: 52px;
+    margin-bottom: 10px;
+}
+
+.hero p{
+    font-size: 16px;
+    opacity: 0.9;
 }
