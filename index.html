@@ -63,7 +63,48 @@
 
         </div>
 
+        <div class="caixa-login esconder" id="tela-cadastro">
+
+            <div class="titulo">
+                <h1>Criar Conta</h1>
+                <p>Crie seu acesso</p>
+            </div>
+
+            <div class="grupo-input">
+                <label>Usuário</label>
+
+                <div class="caixa-input">
+                    <i class="fa-regular fa-user"></i>
+
+                    <input type="text" id="usuario-cadastro" placeholder="Crie um usuário">
+                </div>
+            </div>
+
+            <div class="grupo-input">
+                <label>Senha</label>
+
+                <div class="caixa-input">
+                    <i class="fa-solid fa-lock"></i>
+
+                    <input type="password" id="senha-cadastro" placeholder="Crie uma senha">
+
+                    <i class="fa-regular fa-eye olho"
+                    onclick="mostrarSenha('senha-cadastro', this)"></i>
+                </div>
+            </div>
+
+            <button onclick="criarConta()">Criar Conta</button>
+
+            <div class="cadastro">
+                Já tem uma conta?
+                <a href="#" onclick="abrirLogin()">Entrar</a>
+            </div>
+
+        </div>
+
     </div>
+
+    <script src="script.js"></script>
 
 </body>
 </html>
