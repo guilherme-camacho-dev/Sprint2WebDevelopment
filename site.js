@@ -33,3 +33,25 @@ function voltarTopo(){
         behavior: "smooth"
     });
 }
+
+// NOVO: Lógica do Carrossel de Imagens
+const imagens = ["ia.jpg", "foto_rg.jpg", "ia2.jpg"];
+let index = 0;
+const imgElemento = document.getElementById("imgCarrossel");
+
+function atualizarCarrossel() {
+    imgElemento.src = imagens[index];
+}
+
+function proximaImagem() {
+    index = (index + 1) % imagens.length;
+    atualizarCarrossel();
+}
+
+function voltarImagem() {
+    index = (index - 1 + imagens.length) % imagens.length;
+    atualizarCarrossel();
+}
+
+// Inicia a primeira imagem
+atualizarCarrossel();
