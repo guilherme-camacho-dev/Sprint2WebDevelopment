@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    font-family: Arial;
 }
 
 body{
@@ -43,9 +43,70 @@ body{
     font-size: 18px;
 }
 
+.grupo-input{
+    margin-bottom: 25px;
+}
+
 .grupo-input label{
     display: block;
     margin-bottom: 10px;
+}
+
+.caixa-input{
+    background: #d9dee7;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    border-radius: 10px;
+}
+
+.caixa-input input{
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    margin: 0 10px;
+}
+
+.caixa-input i{
+    color: #666;
+}
+
+.olho{
+    cursor: pointer;
+}
+
+.opcoes{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.lembrar-login{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.esqueci{
+    color: #fd118f;
+    text-decoration: none;
+}
+
+button{
+    width: 100%;
+    height: 55px;
+    background: #f8118c;
+    border: none;
+    color: white;
+    font-size: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+button:hover{
+    background: #da0279;
 }
 
 .cadastro{
@@ -53,50 +114,7 @@ body{
     margin-top: 25px;
 }
 
-.cadastro a, .esqueci{
+.cadastro a{
     color: #f3158b;
     text-decoration: none;
-}
-
-/* NOVO: Estilização de Inputs e Botões */
-.caixa-input{
-    background: #1a1a1a;
-    display: flex;
-    align-items: center;
-    padding: 15px;
-    border-radius: 10px;
-    margin-bottom: 20px;
-}
-
-.caixa-input i{
-    color: #fa1891;
-    margin-right: 15px;
-}
-
-.caixa-input input{
-    background: transparent;
-    border: none;
-    color: white;
-    outline: none;
-    width: 100%;
-}
-
-button{
-    background: #fa1891;
-    color: white;
-    width: 100%;
-    padding: 15px;
-    border: none;
-    border-radius: 10px;
-    font-size: 18px;
-    font-weight: bold;
-    cursor: pointer;
-    margin-top: 15px;
-}
-
-.opcoes{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 14px;
 }
