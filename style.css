@@ -27,3 +27,34 @@ body{
 .esconder{
     display: none;
 }
+
+/* NOVO: Estilização dos Títulos e Textos */
+.titulo{
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.titulo h1{
+    color: #fa1891;
+    font-size: 60px;
+}
+
+.titulo p{
+    color: #ccc;
+    font-size: 18px;
+}
+
+.grupo-input label{
+    display: block;
+    margin-bottom: 10px;
+}
+
+.cadastro{
+    text-align: center;
+    margin-top: 25px;
+}
+
+.cadastro a, .esqueci{
+    color: #f3158b;
+    text-decoration: none;
+}
